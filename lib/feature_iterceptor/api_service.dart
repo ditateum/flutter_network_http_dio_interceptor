@@ -26,7 +26,6 @@ class ApiService {
   }
 
   String _getResult(Map<String, dynamic> json) {
-    print('data received is $json');
     final List<dynamic> list = json["data"];
     return "Received ${list.length} object";
   }
